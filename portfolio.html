@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+  <link rel="stylesheet" href="pstyle.css">
+  <script src="https://kit.fontawesome.com/4bde7a64e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png"  height="250px" width="350px" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a> </li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#services">Certifications</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+              
+            </nav>
+            <div class="text">
+                <p>Full stack Developer</p>
+                <h1>HI,I'm <span>Deepshika</span></h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+            <div class="col1">
+                <img src="Deeps.jpg" alt="">
+            </div>
+            <div class="col2">
+                <h1 class="sub">ABOUT ME</h1>
+                <p class="abt">Energetic and driven professional with an optimistic approach, unwavering patience, and a strong
+                    sense of responsibility, seeking a challenging role as a Full Stack Developer. I aspire to contribute
+                    innovative solutions and foster continuous learning in a dynamic tech environment.
+                </p>
+                    <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('education')">Education</p>
+                    
+                </div>
+                <div class="tab-c active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Creating and maintaining websites or web applications using programming languages, frameworks</li><br>
+                        <li><span>Java</span><br>Java is a programming language known for its readability.</li><br>
+                        <li><span>C</span><br>
+                            C is a powerful, high-level programming language known for its efficiency</li><br>
+                    </ul>
+                </div>
+                <div class="tab-c " id="education">
+                    <ul>
+                        <li><span>2021 - 2025</span><br>B.Tech IT at St.Joseph's college of Engineering</li><br>
+                        <li><span>2020 - 2021</span><br>Velammal Vidhyashram</li><br>
+                        <li><span>2018 - 2019</span><br>SHIRS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------services---->
+<div id="services">
+    <div class="container">
+        <h1 class="sub">My Certification</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>HTML and CSS in depth</h2>
+                <p>Using structured semantic data to control how web sites appear to the user. Creating semantic HTML to structure webpages to look good and work well.</p>
+                <a href="https://www.coursera.org/learn/html-and-css-in-depth/home">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>Programming with JavaScript</h2>
+                <p>Explain the importance of JavaScript in software development. Demonstrate how to write JavaScript code inside the browser</p>
+                <a href="https://www.coursera.org/learn/programming-with-javascript/home/week/1">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store "></i>
+                <h2>React Basics</h2>
+                <p>In this module you will explore the basic structure and use of the React.js library. You will learn how to produce single page web applications using React components and to use JSX to style them.</p>
+                <a href="https://www.coursera.org/learn/react-basics/home/week/1">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!------contact----->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>8764825367</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/deepshika-t-s-45bb9124b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Deepshika04"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="C:\Users\Admin\portfolio\DEEPSHIKA T S (4).pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Enter Name" required>
+                    <input type="email" name="email" placeholder="Enter Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; 2023 Deepshika. All Rights Reserved.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-c");
+    function opentab(tabname){
+        for(tablink of tablinks ){
+            tablink.classList.remove("active-link");
+        }
+   
+    for( tabcontent of  tabcontents ){
+        tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+</body>
+</html>
